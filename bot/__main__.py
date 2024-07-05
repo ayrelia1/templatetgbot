@@ -26,7 +26,7 @@ async def start_commands(bot: Bot):
     await bot.set_my_commands(commands, BotCommandScopeDefault())
 
     
-    #schedulers.add_job()
+    #schedulers.add_job() 123
     schedulers.start()
     
     task1 = asyncio.create_task(create_tables()) # создаем базу юзеров если нет
