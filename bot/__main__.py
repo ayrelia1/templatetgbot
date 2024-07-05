@@ -6,11 +6,12 @@ from handlers import routers
 import asyncio
 from db.models import create_tables
 from db.db import engine
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 import sys
 
 
-
+schedulers = AsyncIOScheduler()
 
 
 
@@ -24,13 +25,16 @@ async def start_commands(bot: Bot):
     ]
     await bot.set_my_commands(commands, BotCommandScopeDefault())
 
-
+    
+    #schedulers.add_job()
+    schedulers.start()
     
     task1 = asyncio.create_task(create_tables()) # создаем базу юзеров если нет
 
     
 @dp.shutdown()
 async def dispose(bot: Bot):
+    schedulers.shutdown()
     engine.dispose()
 
             
