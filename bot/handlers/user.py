@@ -1,12 +1,12 @@
-from ..config import Bot, F, Router, FSInputFile, types, FSMContext, State, bot, CallbackData, FSInputFile, settings
-from ..markups.markup import *
-from ..filters import filtersbot
-from ..sql_function import databasework
-from ..states.states import RequestState
+from config import Bot, F, Router, FSInputFile, types, FSMContext, State, bot, CallbackData, FSInputFile, settings
+from markups.markup import *
+from filters import filtersbot
+from sql_function import databasework
+from states.states import RequestState
 from datetime import timedelta
 import datetime
 from aiogram.types import Chat
-from ..db.models import User
+from db.models import User
 
 
 router = Router()

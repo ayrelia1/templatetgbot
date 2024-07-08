@@ -1,4 +1,4 @@
-from ..config import *
+from config import *
 
 from .check_ban import BannedMiddleware
 from .create_user import CreateUserMiddleware

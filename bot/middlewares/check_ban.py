@@ -2,8 +2,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram import Bot
 from aiogram.dispatcher.middlewares.base import BaseMiddleware
 from typing import Any, Awaitable, Callable, Dict
-from ..sql_function import databasework
-from ..db.models import UserData
+from sql_function import databasework
+from db.models import UserData
 
 class BannedMiddleware(BaseMiddleware): # ---- > мидлвар чек на бан
     async def __call__(

@@ -1,4 +1,4 @@
-from ..config import StatesGroup, State
+from config import StatesGroup, State
 
 
 

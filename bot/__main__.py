@@ -1,11 +1,11 @@
-from .config import dp, logging, bot, Bot, current_directory, root_path
+from config import dp, logging, bot, Bot, current_directory, root_path
 from aiogram.types import BotCommand, BotCommandScopeDefault
 
-from .middlewares import setup
-from .handlers import routers
+from middlewares import setup
+from handlers import routers
 import asyncio
-from .db.models import create_tables
-from .db.db import engine
+from db.models import create_tables
+from db.db import engine
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 import sys

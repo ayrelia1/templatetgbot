@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from ..db.db import engine, async_session
+from db.db import engine, async_session
 
 from sqlalchemy import BigInteger, text
 from sqlalchemy.orm import relationship, Mapped, mapped_column, DeclarativeBase

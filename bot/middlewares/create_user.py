@@ -1,9 +1,9 @@
 from aiogram.types import Message, CallbackQuery
-from ..config import settings
+from config import settings
 from aiogram import Bot
 from aiogram.dispatcher.middlewares.base import BaseMiddleware
 from typing import Any, Awaitable, Callable, Dict
-from ..sql_function import databasework
+from sql_function import databasework
 
 
 class CreateUserMiddleware(BaseMiddleware): # ---- > мидлвар создание юзера

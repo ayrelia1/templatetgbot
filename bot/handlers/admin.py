@@ -1,7 +1,7 @@
-from ..config import Bot, F, Router, FSInputFile, types, FSMContext, State, bot, CallbackData, FSInputFile
-from ..markups.adminmarkup import *
-from ..sql_function import databasework
-from ..filters import filtersbot
+from config import Bot, F, Router, FSInputFile, types, FSMContext, State, bot, CallbackData, FSInputFile
+from markups.adminmarkup import *
+from sql_function import databasework
+from filters import filtersbot
     
 router = Router()
 
