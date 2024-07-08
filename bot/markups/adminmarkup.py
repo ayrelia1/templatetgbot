@@ -1,6 +1,6 @@
-from config import types, InlineKeyboardBuilder
-import filters.filtersbot as filtersbot
-from sql_function import databasework
+from ..config import types, InlineKeyboardBuilder
+from ..filters import filtersbot
+from ..sql_function import databasework
 
 
 def admin_markup():

@@ -1,9 +1,9 @@
-from config import types
-from db.db import async_session, engine
+from .config import types
+from .db.db import async_session, engine
 import sys, asyncio
 from sqlalchemy import text
 from sqlalchemy.future import select
-from db.models import User, UserData
+from .db.models import User, UserData
 
 class databasework:
     
